@@ -1,0 +1,5 @@
+google-adk
+google-cloud-firestore
+requests
+pydantic
+python-dotenv
