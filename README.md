@@ -1,13 +1,15 @@
-# 0xGrantHunter
+ # 0xGrantHunter
 
-AI Agent for discovering local, state, federal, and NGO grants and non-dilutive funding.
-Built with Google Agent Development Kit (ADK).
+Full ADK agent for non-dilutive funding discovery.
 
-## Quickstart
-1. `pip install google-adk google-cloud-firestore requests pydantic`
-2. Set GOOGLE_GENAI_API_KEY and GOOGLE_APPLICATION_CREDENTIALS
-3. `python main.py`
+## Local Run
+pip install -r requirements.txt
+python main.py
 
-See docs for deployment to Agent Garden.
+## GCP Deployment
+1. terraform apply
+2. gcloud builds submit --config cloudbuild.yaml .
 
-**Safety First**: Always verify on official sources.
+Public URL will be in Terraform output.
+
+For hackathon: rapid-agent.devpost.com
